@@ -109,21 +109,26 @@ Profile.Cacheable = cacheComponent(Profile, 'widget.profile', props => {
     const categoryCount = site.categories.filter(category => category.length).length;
     const tagCount = site.tags.filter(tag => tag.length).length;
 
-    const socialLinks = Object.keys(social_links).map(name => {
-        const link = social_links[name];
-        if (typeof link === 'string') {
+    function getSocialLinks() {
+        if (!social_links) {
+            return {};
+        }
+        return Object.keys(social_links).map(name => {
+            const link = social_links[name];
+            if (typeof link === 'string') {
+                return {
+                    name,
+                    url: url_for(link)
+                };
+            }
             return {
                 name,
-                url: url_for(link)
+                url: url_for(link.url),
+                icon: link.icon
             };
-        }
-        return {
-            name,
-            url: url_for(link.url),
-            icon: link.icon
-        };
-    });
-
+        });
+    }
+    
     return {
         avatar: getAvatar(),
         avatarRounded: avatar_rounded,
@@ -149,7 +154,7 @@ Profile.Cacheable = cacheComponent(Profile, 'widget.profile', props => {
         },
         followLink: url_for(follow_link),
         followTitle: __('widget.follow'),
-        socialLinks
+        socialLinks: getSocialLinks()
     };
 });
 

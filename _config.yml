@@ -5,7 +5,7 @@
 # Site
 title: "Yeli's blog"
 subtitle: ''
-description: 'Some notes.'
+description: ''
 keywords: 'Algorithm, Coding, Notes, Java, Python'
 author: '叶离'
 language: en
@@ -15,7 +15,7 @@ timezone: 'Asia/Shanghai'
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://github.com/yu-setsuna/yu-setsuna.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -62,7 +62,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: unknown
 category_map:
 tag_map:
 

@@ -1,5 +1,5 @@
 ---
-title: Some-tags-in-maven
+title: Some tags in maven
 date: 2019-11-19 19:15:30
 tags: 
     - java

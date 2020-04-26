@@ -83,3 +83,6 @@ string longestPalindrome(string s) {
     return s.substr((mcenter - mlength) / 2, mlength);
 }
 ```
+
+## 参考链接
+[https://ethsonliu.com/2018/04/manacher.html](https://ethsonliu.com/2018/04/manacher.html)

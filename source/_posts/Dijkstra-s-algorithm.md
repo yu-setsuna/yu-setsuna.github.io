@@ -3,7 +3,7 @@ title: Dijkstra's algorithm
 date: 2020-04-28 20:16:41
 tags: 
     - algorithm
-    - dijkstra
+    - shortest path
 categories: algorithm
 ---
 

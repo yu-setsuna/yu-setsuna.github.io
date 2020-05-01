@@ -49,3 +49,8 @@ for (int i = 1; i <= n; i++) {
 
 ## 参考链接
 [https://wiki.jikexueyuan.com/project/easy-learn-algorithm/dijkstra.html](https://wiki.jikexueyuan.com/project/easy-learn-algorithm/dijkstra.html)
+
+
+---
+> If 10 years from now, when you are doing something quick and dirty, you suddenly visualize that I am looking over your shoulders and say to yourself "Dijkstra would not have liked this.", well, that would be enough immortality for me.    — E.W.Dijkstra  
+> 如果十年以后，你以快而脏的方式做什么事的时候，能想象我在你的肩后看着，然后对自己说：「Dijkstra 不会希望这样的。」那么对我来说，这就和永生一样了。

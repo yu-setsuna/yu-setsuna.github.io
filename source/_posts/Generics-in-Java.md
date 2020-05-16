@@ -29,9 +29,10 @@ public void covarianceTest() {
 ```
 
 ## 上界限定通配符（Upper Bounds Wildcards）
+只能传入该类型及其子类的对象
 ``` java
 private static void extendTest(List<? extends Fruit> fruits) {
-    // 此时容器不知道 List 的具体类型，无法添加任何类型
+    // 此时容器不知道 List 的具体类型，（不能确定传入的是Fruit或Apple），因此为避免类型转换出错，也无法再向容器中添加任何类型
     // List<?> 同理
 
     // fruits.add(new Fruit());
@@ -42,8 +43,11 @@ private static void extendTest(List<? extends Fruit> fruits) {
 ```
 
 ## 下界限定通配符（Lower Bounds Wildcards）
+只能传入该类型及其父类的对象
 ``` java
 private static void superTest(List<? super Fruit> fruits) {
+    // 此时容器已经可以确实传入的类型一定是Fruit或它的父类
+    // 因此可以向容器中添加Fruit和它的子类对象，不会发生类型转换错误
     fruits.add(new Apple());
     fruits.add(new Fruit());
     // fruits.add(new Food());
@@ -54,9 +58,11 @@ private static void superTest(List<? super Fruit> fruits) {
 ``` java
 @Test
 public void genericTest() {
+    // 只能传入Fruit和它的父类
     superTest(new ArrayList<Food>());
     // superTest(new ArrayList<Apple>());
 
+    // 只能传入Fruit和它的子类
     extendTest(new ArrayList<Apple>());
     // extendTest(new ArrayList<Food>());
 }

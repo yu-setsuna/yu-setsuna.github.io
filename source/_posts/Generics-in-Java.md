@@ -9,7 +9,8 @@ categories: java
 
 *以下注释内容无法通过编译*
 ## 关于协变 （Covariant）
-Java 中数组可以声明为父类型，但列表不可以。  
+- Java 中数组可以声明为父类型，但列表不可以。
+- Java 1.5 开始子类覆盖父类的方法时可以返回具体的类型。
 ``` java
 class Food {}
 class Fruit extends Food {}

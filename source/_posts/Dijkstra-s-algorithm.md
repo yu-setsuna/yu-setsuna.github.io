@@ -36,6 +36,8 @@ for (int i = 1; i <= n; i++) {
         }
     }
     p[u] = true;
+    if (u == -1) break;
+
     for (int v = 1; v <= n; v++) {
         if (!p[v] && e[u][v] != INF) {
             if (dis[v] > dis[u] + e[u][v]) {

@@ -148,8 +148,5 @@ Pizza的构造器参数为`Builder<?> builder`，这里泛型定义为<? extend 
 > Self 类型是在接口中用描述实现接口的具体类型的特殊类型标识，用来安全地从父类型向子类型转换对象。一般来说，把父类型的对象转换为子类型的对象，都要用强制类型转换。这样做很不优雅，也不「type safe」。不过利用递归的类型参数，可以避免强制类型转换，这也是递归类型参数的重要用法。
 
 
-## 源码
-[Github](https://github.com/yu-setsuna/effective-java-3e-source-code/blob/master/src/test/java/effectivejava/chapter2/item2/hierarchicalbuilder/PizzaTest.java)
-
 ## 参考链接
 [知乎：Java泛型递归模式的意义](https://www.zhihu.com/question/390135686)

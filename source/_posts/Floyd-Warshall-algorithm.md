@@ -13,6 +13,8 @@ categories: algorithm
 ## 思想
 在两个点AB之找到第三个点C，使 `AC + CB < AB`
 
+<!-- more -->
+
 ## 代码
 ``` cpp
 for (int i = 0; i < size; i++) {

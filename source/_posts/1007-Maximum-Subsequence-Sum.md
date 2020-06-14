@@ -14,6 +14,8 @@ Given a sequence of K integers { N1, N2, …, NK }. A continuous subsequence is 
 
 Now you are supposed to find the largest sum, together with the first and the last numbers of the maximum subsequence.
 
+<!-- more -->
+
 ### Input Specification:
 Each input file contains one test case. Each case occupies two lines. The first line contains a positive integer K (≤10000). The second line contains K numbers, separated by a space.
 

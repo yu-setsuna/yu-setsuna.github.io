@@ -7,6 +7,14 @@ tags:
 categories: algorithm
 ---
 
+{% raw %}<div class="notification is-info">{% endraw %}
+If 10 years from now, when you are doing something quick and dirty, you suddenly visualize that I am looking over your shoulders and say to yourself "Dijkstra would not have liked this.", well, that would be enough immortality for me.    — E.W.Dijkstra  
+如果十年以后，你以快而脏的方式做什么事的时候，能想象我在你的肩后看着，然后对自己说：「Dijkstra 不会希望这样的。」那么对我来说，这就和永生一样了。
+{% raw %}</div>{% endraw %}
+
+---
+
+
 适用于单源点最短路径，通常不能计算负权。时间复杂度O(n^2)。
 
 ## 思想
@@ -15,6 +23,8 @@ categories: algorithm
 遍历集合Q中的点，将其命名为b，通过a->s->b缩短ab的距离，即判断as+sb是否小于ab（此过程名为“松弛”），  
 在Q中找到距离源点第二近的点，此时这个点已经进行过“松弛”，故该点到源点的距离也是最短，  
 然后重复以上过程，即可得到源点到其它所有点的最短路径。
+
+<!-- more -->
 
 ## 注意
 若存在点权，应特别注意源点s。因为在第一步中直接将s添加到P，松弛过程中不会再计算s的点权
@@ -53,6 +63,3 @@ for (int i = 1; i <= n; i++) {
 [https://wiki.jikexueyuan.com/project/easy-learn-algorithm/dijkstra.html](https://wiki.jikexueyuan.com/project/easy-learn-algorithm/dijkstra.html)
 
 
----
-> If 10 years from now, when you are doing something quick and dirty, you suddenly visualize that I am looking over your shoulders and say to yourself "Dijkstra would not have liked this.", well, that would be enough immortality for me.    — E.W.Dijkstra  
-> 如果十年以后，你以快而脏的方式做什么事的时候，能想象我在你的肩后看着，然后对自己说：「Dijkstra 不会希望这样的。」那么对我来说，这就和永生一样了。

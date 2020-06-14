@@ -11,6 +11,9 @@ categories: java
 ## 关于协变 （Covariant）
 - Java 中数组协变的，泛型不是。
 - Java 1.5 开始子类覆盖父类的方法时可以返回具体的类型。
+
+<!-- more -->
+
 ``` java
 class Food {}
 class Fruit extends Food {}

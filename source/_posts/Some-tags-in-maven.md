@@ -27,6 +27,7 @@ categories: java
 > This scope is only supported on a dependency of type pom in the `<dependencyManagement/>` section. It indicates the dependency to be replaced with the effective list of dependencies in the specified POM's `<dependencyManagement/>` section. Since they are replaced, dependencies with a scope of import do not actually participate in limiting the transitivity of a dependency. 
 > [https://maven.apache.org](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)  
 
+<!-- more -->
 
 ## Maven标签`<dependencies/>`和`<dependencyManagement/>`的区别 
 

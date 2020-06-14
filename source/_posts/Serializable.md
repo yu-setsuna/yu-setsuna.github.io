@@ -16,7 +16,7 @@ Serializable 只是语义接口，无实际方法
 
 Java 反序列化时通过判断字节流和相应实体类的 sesrialVersionUID 验证版本是否一致，一致时才能进行反序列化，否则抛出 InvalidCastException 
 
-
+<!-- more -->
 
 ### 显式定义 
 

@@ -3,6 +3,7 @@ title: 1007 Maximum Subsequence Sum
 date: 2020-06-14 07:17:14
 tags: 
     - algorithm
+    - pat
     - maximum subsequence sum
     - dp
 categories: algorithm
@@ -134,3 +135,6 @@ int main() {
     return 0;
 }
 ```
+
+## 题目链接
+[1007](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)

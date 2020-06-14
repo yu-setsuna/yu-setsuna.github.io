@@ -68,7 +68,7 @@ head:
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
         - ''
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: /atom.xml
 # Page top navigation bar configurations
 navbar:
     # Naviagtion menu items
@@ -77,7 +77,7 @@ navbar:
         Archives: /archives
         Categories: /categories
         Tags: /tags
-        About: /about
+        # About: /about
     # Links to be shown on the right of the navigation bar
     links:
         # Download on GitHub:
@@ -192,9 +192,15 @@ widgets:
         follow_link: 'https://github.com/yu-setsuna'
         # Links to be shown on the bottom of the profile widget
         social_links:
-            # Github:
-            #     icon: fab fa-github
-            #     url: 'https://github.com/yu-setsuna'
+            Email:
+                icon: fas fa-at
+                url: 'mailto://i@yeli.io'
+            QQ:
+                icon: fab fa-qq
+                url: 'http://wpa.qq.com/msgrd?v=3&uin=1051210147&site=qq&menu=yes'
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/yu-setsuna'
             # Facebook:
             #     icon: fab fa-facebook
             #     url: 'https://facebook.com'
@@ -204,23 +210,23 @@ widgets:
             # Dribbble:
             #     icon: fab fa-dribbble
             #     url: 'https://dribbble.com'
-            # RSS:
-            #     icon: fas fa-rss
-            #     url: /
+            RSS:
+                icon: fas fa-rss
+                url: /atom.xml
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: toc
     # Recommendation links widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
-        # Names and URLs of the sites
-        links:
-            Github: 'https://github.com/yu-setsuna'
-            Email: 'mailto://i@yeli.io'
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Github: 'https://github.com/yu-setsuna'
+    #         Email: 'mailto://i@yeli.io'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
